@@ -1,0 +1,31 @@
+﻿<Window x:Class="ContextMenuDemo.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:local="clr-namespace:ContextMenuDemo"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Width="800" Height="600">
+    
+    <Window.DataContext>
+        <local:EmployeeInfoViewModel/>
+    </Window.DataContext>
+    <Grid>        
+        <syncfusion:SfDataGrid x:Name="datagrid"
+                                       AllowFiltering="True"
+                                       AllowFrozenGroupHeaders="True" 
+                                       AutoExpandGroups="True"
+                                       AutoGenerateColumns="False"
+                                       ItemsSource="{Binding EmployeeDetails}"
+                                       LiveDataUpdateMode="AllowDataShaping"                                       
+                                       ShowGroupDropArea="True" AllowSorting="True" AllowDraggingColumns="True" >
+            
+            
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn MappingName="EmployeeId" AllowFiltering="True"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeName" AllowFiltering="False"/>
+                <syncfusion:GridTextColumn MappingName="Percent"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeDesignation"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeAge" AllowFiltering="True"/>
+            </syncfusion:SfDataGrid.Columns>
+        </syncfusion:SfDataGrid>
+    </Grid>
+</Window>
