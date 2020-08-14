@@ -54,6 +54,10 @@ public class GridHeaderCellControlExt:GridHeaderCellControl
     }
 }
 ```
+With this you can achieve the scenario’s like below 
+Column AllowFiltering = False --> Icon is always hidden even if the mouse is over the Header.
+Column AllowFiltering = True + Mouse over Header --> the icon is visible.
+Column AllowFiltering = True + Mouse outside the header --> the icon stays is visible if the column is filtered otherwise it is hidden.
 
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
