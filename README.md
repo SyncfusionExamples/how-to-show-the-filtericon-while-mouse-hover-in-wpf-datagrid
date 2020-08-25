@@ -4,7 +4,7 @@ How to show the FilterIcon while Mouse hover in WPF DataGrid (SfDataGrid)?
 
 # About the sample
 
-In SfDataGrid, you can set the filter icon visibility based on mouse positions by customize the GridHeaderCellControlRenderer and GridHeaderCellControl.
+By default, SfDataGrid does not provide the support set the filter icon visibility based on mouse positions, you can achieve this by customize the GridDataHeaderCellRenderer and GridHeaderCellControl.
 
 ```c#
 public class GridDataHeaderCellRendererExt : GridDataHeaderCellRenderer
@@ -54,10 +54,5 @@ public class GridHeaderCellControlExt:GridHeaderCellControl
     }
 }
 ```
-With this you can achieve the scenario’s like below 
-Column AllowFiltering = False --> Icon is always hidden even if the mouse is over the Header.
-Column AllowFiltering = True + Mouse over Header --> the icon is visible.
-Column AllowFiltering = True + Mouse outside the header --> the icon stays is visible if the column is filtered otherwise it is hidden.
-
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
