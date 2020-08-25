@@ -11,6 +11,7 @@
     <Grid>        
         <syncfusion:SfDataGrid x:Name="datagrid"
                                        AllowFiltering="True"
+                                       ColumnSizer="Star"
                                        AllowFrozenGroupHeaders="True" 
                                        AutoExpandGroups="True"
                                        AutoGenerateColumns="False"
@@ -20,11 +21,11 @@
             
             
             <syncfusion:SfDataGrid.Columns>
-                <syncfusion:GridTextColumn MappingName="EmployeeId" AllowFiltering="True"/>
-                <syncfusion:GridTextColumn MappingName="EmployeeName" AllowFiltering="False"/>
-                <syncfusion:GridTextColumn MappingName="Percent"/>
-                <syncfusion:GridTextColumn MappingName="EmployeeDesignation"/>
-                <syncfusion:GridTextColumn MappingName="EmployeeAge" AllowFiltering="True"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeId" HeaderText="Employee Id" AllowFiltering="True"/>
+                <syncfusion:GridTextColumn MappingName="EmployeeName" HeaderText="Employee Name" AllowFiltering="False"/>
+                <syncfusion:GridPercentColumn MappingName="Percent" TextAlignment="Right" />
+                <syncfusion:GridTextColumn MappingName="EmployeeDesignation" HeaderText="Employee Designation" />
+                <syncfusion:GridTextColumn MappingName="EmployeeAge" HeaderText="Employee Age" TextAlignment="Right" AllowFiltering="True"/>
             </syncfusion:SfDataGrid.Columns>
         </syncfusion:SfDataGrid>
     </Grid>
