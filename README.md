@@ -4,7 +4,7 @@ How to show the FilterIcon while Mouse hover in WPF DataGrid (SfDataGrid)?
 
 # About the sample
 
-By default, SfDataGrid does not provide the support set the filter icon visibility based on mouse positions, you can achieve this by customize the GridDataHeaderCellRenderer and GridHeaderCellControl.
+By default, SfDataGrid does not provide the support to set the filter icon visibility based on mouse positions, you can achieve this by customize the GridDataHeaderCellRenderer and GridHeaderCellControl.
 
 ```c#
 public class GridDataHeaderCellRendererExt : GridDataHeaderCellRenderer
