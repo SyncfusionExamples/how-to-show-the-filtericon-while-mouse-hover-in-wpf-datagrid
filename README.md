@@ -54,5 +54,8 @@ public class GridHeaderCellControlExt:GridHeaderCellControl
     }
 }
 ```
+
+KB article - [How to show the FilterIcon while Mouse hover in WPF DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/11913/how-to-show-the-filtericon-while-mouse-hover-in-wpf-datagrid-sfdatagrid)
+
 ## Requirements to run the demo
  Visual Studio 2015 and above versions
